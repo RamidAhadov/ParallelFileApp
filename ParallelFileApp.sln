@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCreation", "FileCreation\FileCreation.csproj", "{AF2E73C2-B5FF-4A1B-8049-CB8D49AEFF1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelFileApp.Configuration", "ParallelFileApp.Configuration\ParallelFileApp.Configuration.csproj", "{AF2E73C2-B5FF-4A1B-8049-CB8D49AEFF1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWriting", "FileWriting\FileWriting.csproj", "{F098F091-5E80-4CCA-A359-8336A693494E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLocationChanging", "FileLocationChanging\FileLocationChanging.csproj", "{171774D7-B545-4B6E-9CD1-569DF522268D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelFileApp.FileCreation", "ParallelFileApp.FileCreation\ParallelFileApp.FileCreation.csproj", "{DC4DA721-140E-4B18-A0C7-D154A1FF8709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +14,9 @@ Global
 		{AF2E73C2-B5FF-4A1B-8049-CB8D49AEFF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF2E73C2-B5FF-4A1B-8049-CB8D49AEFF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF2E73C2-B5FF-4A1B-8049-CB8D49AEFF1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F098F091-5E80-4CCA-A359-8336A693494E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F098F091-5E80-4CCA-A359-8336A693494E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F098F091-5E80-4CCA-A359-8336A693494E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F098F091-5E80-4CCA-A359-8336A693494E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{171774D7-B545-4B6E-9CD1-569DF522268D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{171774D7-B545-4B6E-9CD1-569DF522268D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{171774D7-B545-4B6E-9CD1-569DF522268D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{171774D7-B545-4B6E-9CD1-569DF522268D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4DA721-140E-4B18-A0C7-D154A1FF8709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4DA721-140E-4B18-A0C7-D154A1FF8709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4DA721-140E-4B18-A0C7-D154A1FF8709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4DA721-140E-4B18-A0C7-D154A1FF8709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
