@@ -11,10 +11,16 @@ var deleter = container.Resolve<FileDeleter>();
 
 Stopwatch stopwatch = new Stopwatch();
 stopwatch.Start();
-deleter.Delete(config.Path());
+// deleter.Delete(config.Path());
+deleter.ManualThreadedDelete(config.Path());
 stopwatch.Stop();
 
 Console.WriteLine("Elapsed time: {0}",stopwatch.ElapsedMilliseconds);
+
+// for (int i = 1; i <= (i+1); i++)
+// {
+//     Console.WriteLine(i);
+// }
 
 IContainer ConfigureContainer()
 {
