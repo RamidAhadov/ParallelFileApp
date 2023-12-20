@@ -1,4 +1,4 @@
-namespace ParallelFileApp.Configuration.Paths;
+namespace ParallelFileApp.Configuration.ConfigParameters;
 
 public class FilePath
 {
