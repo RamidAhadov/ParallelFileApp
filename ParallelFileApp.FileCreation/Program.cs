@@ -32,12 +32,12 @@ IContainer ConfigureContainer()
 
 Stopwatch stopwatch = new Stopwatch();
 stopwatch.Start();
-creator.CreateFile(path.Path());
+creator.CreateFile(path.Path(),20000);
 stopwatch.Stop();
 
 Console.WriteLine("Elapsed time: {0}",stopwatch.ElapsedMilliseconds);
-Console.WriteLine("Press any button to continue");
-Console.ReadLine();
+// Console.WriteLine("Press any button to continue");
+// Console.ReadLine();
 
 // stopwatch.Start();
 // creator.DeleteFile(path.Path());

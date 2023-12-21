@@ -13,16 +13,17 @@ public class FileDeleter:IDeleter
         }
     }
     
+    private static object fileLock = new object();
     public void ManualThreadedDelete(string path)
     {
-        int threadCount = 4;
+        int threadCount = 2;
 
         Thread[] threads = new Thread[threadCount];
 
         for (int i = 0; i < threadCount; i++)
         {
-            int threadNumber = i;
-            threads[i] = new Thread(() => DeleteFiles(path, threadNumber));
+            int threadNumber = i + 1;
+            threads[i] = new Thread(() => DeleteFiles(path, threadNumber,threadCount));
             threads[i].Start();
         }
 
@@ -32,15 +33,19 @@ public class FileDeleter:IDeleter
         }
     }
         
-    static void DeleteFiles(string path,int threadNumber)
+    static void DeleteFiles(string path,int threadNumber,int threadCount)
     {
-        for (int i = 1; i <= 20000; i++)
+        for (int i = 0; i < 20000/threadCount; i++)
         {
-            string fullPath = Path.Combine(path, $"example{i*threadNumber}.txt");
+            string fullPath = Path.Combine(path, $"example{threadNumber + (i * threadCount)}.txt");
 
             if (File.Exists(fullPath))
             {
-                File.Delete(fullPath);
+                // lock (fileLock)
+                // {
+                    File.Delete(fullPath);
+                    Console.Write(i + " ");
+                //}
             }
         }
     }

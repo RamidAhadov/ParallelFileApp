@@ -12,7 +12,8 @@ var writer = container.Resolve<FileWriter>();
 
 Stopwatch stopwatch = new Stopwatch();
 stopwatch.Start();
-writer.Write(config.Path(),config.Text());
+// writer.Write(config.Path(),config.Text());
+writer.ManualThreadedWrite(config.Path(),config.Text());
 stopwatch.Stop();
 
 Console.WriteLine("Elapsed time: {0}",stopwatch.ElapsedMilliseconds);
